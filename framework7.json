@@ -1,0 +1,25 @@
+{
+  "cwd": "E:\\dev\\mobile\\belajarobatapp",
+  "type": [
+    "capacitor"
+  ],
+  "name": "Belajarobat",
+  "framework": "core",
+  "template": "blank",
+  "bundler": "vite",
+  "cssPreProcessor": "less",
+  "theming": {
+    "customColor": true,
+    "color": "#1ba4ab",
+    "darkMode": false,
+    "iconFonts": false
+  },
+  "customBuild": false,
+  "pkg": "io.framework7.belajarobat",
+  "capacitor": {
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  }
+}

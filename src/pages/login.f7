@@ -1,0 +1,58 @@
+<template>
+    <div class="page">
+      <!-- Top Navbar -->
+      <div class="navbar">
+        <div class="navbar-bg"></div>
+        <div class="navbar-inner sliding">
+          <div class="title">Login</div>
+        </div>
+      </div>
+     
+      <!-- Scrollable page content-->
+      <div class="page-content">
+        <div class="block">
+            <div class="list">
+                <ul>
+                  <!-- additional "item-input-outline" class -->
+                  <li class="item-content item-input item-input-outline">
+                    <div class="item-inner">
+                      <div class="item-title item-label">Email</div>
+                      <div class="item-input-wrap">
+                        <input type="text" name="email" />
+                        <span class="input-clear-button"></span>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="item-content item-input item-input-outline">
+                    <div class="item-inner">
+                      <div class="item-title item-label">Password</div>
+                      <div class="item-input-wrap">
+                        <input type="password" name="password" />
+                        <span class="input-clear-button"></span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content">
+                    <div class="item-inner">
+                        <button class="button button-large button-fill" @click="${goToHomePage}">Masuk</button>
+                    </div>
+                  </li> 
+                </ul>
+                
+            </div>              
+        </div>
+  
+      </div>
+    </div>
+  </template>
+  <script>
+  export default (props, {$, $f7, $f7router}) => {
+
+    const goToHomePage = () => {
+        $f7router.navigate('/home');
+    }
+
+    return $render;
+  }
+  </script>
